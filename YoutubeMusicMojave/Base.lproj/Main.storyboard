@@ -72,13 +72,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="1292" height="720"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <wkWebView wantsLayer="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Uv-sd-lf6">
+                            <wkWebView wantsLayer="YES" customUserAgent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_5) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/13.1.1 Safari/605.1.15" translatesAutoresizingMaskIntoConstraints="NO" id="9Uv-sd-lf6">
                                 <rect key="frame" x="0.0" y="0.0" width="1292" height="720"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" audio="YES"/>
                                     <wkPreferences key="preferences"/>
                                 </wkWebViewConfiguration>
-                                <string key="customUserAgent">Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_6 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Version/11.0 Mobile/15D100 Safari/604.1</string>
                             </wkWebView>
                         </subviews>
                         <constraints>
