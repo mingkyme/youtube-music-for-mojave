@@ -3,17 +3,20 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6404137E248E47220063B962 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6404137D248E47220063B962 /* WebKit.framework */; };
 		6467B6B6248E326100264CCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467B6B5248E326100264CCA /* AppDelegate.swift */; };
 		6467B6B8248E326100264CCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6467B6B7248E326100264CCA /* ViewController.swift */; };
 		6467B6BA248E326300264CCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6467B6B9248E326300264CCA /* Assets.xcassets */; };
 		6467B6BD248E326300264CCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6467B6BB248E326300264CCA /* Main.storyboard */; };
+		A6E94B84F595CD9C8EB43031 /* Pods_YoutubeMusicMojave.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C4D1F76B42BED99581B56F39 /* Pods_YoutubeMusicMojave.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6404137D248E47220063B962 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		6467B6B2248E326100264CCA /* YoutubeMusicMojave.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YoutubeMusicMojave.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6467B6B5248E326100264CCA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6467B6B7248E326100264CCA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -21,6 +24,9 @@
 		6467B6BC248E326300264CCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6467B6BE248E326300264CCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6467B6BF248E326300264CCA /* YoutubeMusicMojave.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = YoutubeMusicMojave.entitlements; sourceTree = "<group>"; };
+		C4D1F76B42BED99581B56F39 /* Pods_YoutubeMusicMojave.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YoutubeMusicMojave.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBF535B293132772AF223506 /* Pods-YoutubeMusicMojave.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeMusicMojave.debug.xcconfig"; path = "Target Support Files/Pods-YoutubeMusicMojave/Pods-YoutubeMusicMojave.debug.xcconfig"; sourceTree = "<group>"; };
+		F11FD34F9FF052C307B517CA /* Pods-YoutubeMusicMojave.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-YoutubeMusicMojave.release.xcconfig"; path = "Target Support Files/Pods-YoutubeMusicMojave/Pods-YoutubeMusicMojave.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,17 +34,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6404137E248E47220063B962 /* WebKit.framework in Frameworks */,
+				A6E94B84F595CD9C8EB43031 /* Pods_YoutubeMusicMojave.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1DDBEC2B0E31AB1A9F83F170 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EBF535B293132772AF223506 /* Pods-YoutubeMusicMojave.debug.xcconfig */,
+				F11FD34F9FF052C307B517CA /* Pods-YoutubeMusicMojave.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6467B6A9248E326100264CCA = {
 			isa = PBXGroup;
 			children = (
 				6467B6B4248E326100264CCA /* YoutubeMusicMojave */,
 				6467B6B3248E326100264CCA /* Products */,
+				1DDBEC2B0E31AB1A9F83F170 /* Pods */,
+				6E09E635D9FB47FD8766CE16 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,6 +82,15 @@
 			path = YoutubeMusicMojave;
 			sourceTree = "<group>";
 		};
+		6E09E635D9FB47FD8766CE16 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6404137D248E47220063B962 /* WebKit.framework */,
+				C4D1F76B42BED99581B56F39 /* Pods_YoutubeMusicMojave.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -70,9 +98,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6467B6C2248E326300264CCA /* Build configuration list for PBXNativeTarget "YoutubeMusicMojave" */;
 			buildPhases = (
+				DED01E8A228C9E1E64E97F22 /* [CP] Check Pods Manifest.lock */,
 				6467B6AE248E326100264CCA /* Sources */,
 				6467B6AF248E326100264CCA /* Frameworks */,
 				6467B6B0248E326100264CCA /* Resources */,
+				BA865F6C59B9B0CD4C2360FB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -127,6 +157,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		BA865F6C59B9B0CD4C2360FB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoutubeMusicMojave/Pods-YoutubeMusicMojave-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-YoutubeMusicMojave/Pods-YoutubeMusicMojave-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-YoutubeMusicMojave/Pods-YoutubeMusicMojave-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DED01E8A228C9E1E64E97F22 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-YoutubeMusicMojave-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6467B6AE248E326100264CCA /* Sources */ = {
@@ -267,6 +339,7 @@
 		};
 		6467B6C3248E326300264CCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EBF535B293132772AF223506 /* Pods-YoutubeMusicMojave.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YoutubeMusicMojave/YoutubeMusicMojave.entitlements;
@@ -287,6 +360,7 @@
 		};
 		6467B6C4248E326300264CCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F11FD34F9FF052C307B517CA /* Pods-YoutubeMusicMojave.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = YoutubeMusicMojave/YoutubeMusicMojave.entitlements;
