@@ -29,11 +29,12 @@ class ViewController: NSViewController, MediaKeyTapDelegate {
     }
     func handle(mediaKey: MediaKey, event: KeyEvent) {
         switch mediaKey {
-        case .playPause:
-            web.evaluateJavaScript("document.querySelector('#play-pause-button').click()", completionHandler: nil)
-        case .previous, .rewind:
+            case .previous, .rewind:
             web.evaluateJavaScript("document.querySelector('#left-controls > div > paper-icon-button.previous-button.style-scope.ytmusic-player-bar').click()", completionHandler: nil)
             
+        case .playPause:
+            web.evaluateJavaScript("document.querySelector('#play-pause-button').click()", completionHandler: nil)
+        
         case .next, .fastForward:
             web.evaluateJavaScript("document.querySelector('#left-controls > div > paper-icon-button.next-button.style-scope.ytmusic-player-bar').click()", completionHandler: nil)
         }
