@@ -39,6 +39,5 @@ class ViewController: NSViewController, MediaKeyTapDelegate {
             web.evaluateJavaScript("document.querySelector('#left-controls > div > paper-icon-button.next-button.style-scope.ytmusic-player-bar').click()", completionHandler: nil)
         }
     }
-
 }
 
